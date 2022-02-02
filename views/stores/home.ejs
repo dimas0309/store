@@ -1,0 +1,55 @@
+<% layout('layouts/template') %>
+
+<div class="d-flex justify-content-around">
+    <%- include('../partials/purchase') %>
+
+    <div class="p-2 d-flex flex-column">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="p-2">
+                    <label for="cus"><b>CLIENTE</b></label>
+                    <input class="form-control" id="cus" type="text">  
+                </div>
+                <div class="p-2">
+                    <label for="addr"><b>DIRECCION</b></label>
+                    <input class="form-control" id="addr" type="text">  
+                </div>
+                <div class="p-3">
+                    <label id="inum"><%= num %></label>
+                    <br>
+                    <label id="idate"></label>      
+                </div>
+           </div>
+        </div>
+        <div class="p-2 container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Cantidad</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                        <th>Monto</th>
+                    </tr>
+               </thead>
+               <tbody></tbody>
+            </table>
+        </div>           
+   </div>
+            
+    <div class="container">
+        <div class="mt-5">
+            <a href="/index">
+                ver facturas
+            </a>
+        </div>
+    
+    </div>
+</div>
+        
+    
+
+    
+    
+     
+    
+     

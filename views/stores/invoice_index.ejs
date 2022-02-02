@@ -1,0 +1,11 @@
+<% layout('layouts/template') %>
+
+<ul>
+   <% for (let invoice of invoices) { %>
+   <li>
+        <%= invoice.invoice_number %> -- 
+        <%= invoice.total %> -- 
+        <%= invoice.invoice_date.toString().slice(0,25) %>
+   </li>
+   <% } %>
+</ul>
